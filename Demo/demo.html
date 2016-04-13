@@ -1,0 +1,57 @@
+<!--
+Author: Tim Davis
+demo html file
+This file contains the html displayed on the page
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Demo</title>
+
+		<!-- your files that you will write -->
+		<link href="demo.css" type="text/css" rel="stylesheet" />
+		<script src="demo.js" type="text/javascript"></script>
+	</head>
+
+	<body>
+		<h1>Disease Demo</h1>
+		
+		<p id="controls">
+		<!--
+			this area holds the button controls
+		-->
+			Speed:
+			<select id="speed">
+				<option value="2000">Slow (2 second delay)</option>
+				<option value="500" selected="selected">Normal (.5 second delay)</option>
+				<option value="200">Fast (.2 second delay)</option>
+			</select>
+			
+			Chance:
+			<select id="chance">
+				<option value=".2">Very Low (20%)</option>
+				<option value=".4">Low (40%)</option>
+				<option value=".5" selected="selected">Normal (50%)</option>
+				<option value=".8">High (80%)</option>
+				<option value="1">Max (100%)</option>
+			</select>
+			
+			</br>
+			
+			<input type="submit" value="Reset Grid" id="reset" />
+		</p>
+		
+		<div id="tilearea">
+		<!--
+			this area holds the interactive demo
+		-->
+		</div>
+		
+		<div id="output">
+		<!--
+			this area holds any output the program may have
+		-->
+		</div>
+
+	</body>
+</html>

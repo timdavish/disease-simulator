@@ -1,0 +1,287 @@
+/*
+Author: Tim Davis
+disease css file
+This file styles the html page displayed
+*/
+
+/*
+ **** General Styling ****
+ */
+
+body {}
+
+#simulation {
+		width: 1200px;
+    padding-bottom: 15px;
+    position: relative;
+    background-color: white;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14pt;
+
+		/*
+		border: 1px solid #ddd;
+		background: #fff;
+		background: linear-gradient(#f6f6f6 0, #fff 50px);
+		background: -o-linear-gradient(#f6f6f6 0, #fff 50px);
+		background: -ms-linear-gradient(#f6f6f6 0, #fff 50px);
+		background: -moz-linear-gradient(#f6f6f6 0, #fff 50px);
+		background: -webkit-linear-gradient(#f6f6f6 0, #fff 50px);
+		box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+		-o-box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+		-ms-box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+		-moz-box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+		-webkit-box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+		*/
+}
+
+h2 {
+	margin-left: 10%;
+}
+
+
+
+/*
+ **** Above grid ****
+ */
+
+#controls {
+    margin-left: 5%;
+}
+
+#counters table {
+	 	margin-left: 0%;
+}
+
+
+
+/*
+ **** Button Styling ****
+ */
+
+button {
+    margin: 8px;
+    padding: 10px 10px;
+    background-color: #4d4d4d;
+  border: 2px solid #4d4d4d;
+    opacity: 1;
+    border-radius: 1px 1px 10px 10px;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+
+    -webkit-transition-duration: 0.5s; /* Safari */
+  transition-duration: 0.5s;
+}
+
+#buttonStep {
+    margin-right: 0px;
+}
+
+#buttonInfect {
+    background-color: #f43325;
+    border-color: #f43325;
+}
+
+#buttonInterventions {
+    background-color: purple;
+    border-color: purple;
+}
+
+button:enabled, #buttonInfect:disabled, #buttonInterventions:disabled {
+    opacity: 1;
+}
+
+button:disabled, #buttonInfect:enabled, #buttonInterventions:enabled {
+    -webkit-transition-duration: 0.5s; /* Safari */
+  transition-duration: 0.5s;
+    opacity: .4;
+}
+
+#buttonInfect:hover, #buttonInterventions:hover {
+    opacity: 1;
+}
+
+#buttonStep:disabled, #buttonReset:disabled {
+    -webkit-transform: none;
+    transform: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Grow transition */
+button {
+  display: inline-block;
+  vertical-align: middle;
+
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+button:hover, button:focus, button:active, button.active {
+    -webkit-transition-duration: 0.5s; /* Safari */
+  transition-duration: 0.5s;
+  -webkit-transform: scale(1.13);
+  transform: scale(1.13);
+}
+
+
+
+/*
+ **** Counter Styling ****
+ */
+
+ table {
+     padding-left: 25px;
+     font-size: 12pt;
+ }
+
+.countTitle {
+    text-align: right;
+}
+
+#dayCount, #susceptibleCount, #interventionCount, #infectedCount, #recoveredCount {
+    width: 50px;
+    text-align: left;
+}
+
+#info {
+    font-size: 12pt;
+}
+
+
+
+/*
+ **** Grid and Cell Styling ****
+ */
+ #main {
+     width: 920px;
+     height: auto;
+     margin-left: 0%;
+ }
+
+#grid {
+    margin: 8px 0px;
+    position: relative;
+    background-color: black;
+    border: 2px solid #4d4d4d;
+    border-radius: 8px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.cell {
+    position: absolute;
+    border: 1px solid #4d4d4d;
+    border-radius: 1px;
+    cursor: default;
+    background-color: #9ACFFF;
+
+    -webkit-transition-duration: 0.3s; /* Safari */
+  transition-duration: 0.3s;
+}
+
+.cell:hover {
+    border-color: black;
+}
+
+.infected {
+    background-color: #f43325;
+    /*background: url("red.jpg");*/
+}
+
+.intervention {
+    background-color: purple;
+}
+
+.immune {
+    background-color: yellow;
+}
+
+
+
+/*
+ **** Legend Styling ****
+ */
+
+#legend {
+    position: absolute;
+    display: inline-block;
+
+    width: 260px;
+    height: auto;
+    margin: 50px 0px 0px 90px;
+    padding: 1%;
+
+    /*
+    border: 2px solid #4d4d4d;
+    border-radius: 1px 1px 10px 10px;
+    */
+
+    font-size: 10pt;
+}
+
+#legend p {
+    float: left;
+}
+
+#legend h3 {
+    text-align: center;
+    margin-top: 0px;
+}
+
+.legend {
+    float: left;
+    position: relative;
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+
+    border-color: black;
+}
+
+#legend .right {
+    margin-left: 20px;
+}
+
+#infectedLegend {
+    clear: left;
+}
+
+#recoveredLegend {
+    margin-left: 42px;
+}
+
+
+
+/*
+ **** Graph Styling ****
+ */
+
+#flot {
+    position: absolute;
+    display: inline-block;
+
+    margin: 195px 0px 0px 15px;
+    width: 400px;
+    height: 500px;
+}
+
+
+
+/*
+ **** Miscellaneous ****
+ */
+
+#dev {
+    display: none;
+}
