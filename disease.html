@@ -29,75 +29,76 @@ This file contains the html displayed on the page
 			<script type="text/javascript" src="disease.js"></script>
 			<script type="text/javascript" src="graph.js"></script>
 
-			<h2>Disease Spreading Simulation</h2>
-
-
-			<!-- this area holds the button controls -->
-			<div id="controls">
-				<button type="button" class="inactive" id="buttonStep">Step</button>
-
-				<button type="button" class="inactive" id="buttonRun">Run</button>
-
-				<button type="button" class="active" id="buttonInfect" disabled="disabled">Add Infections</button>
-
-				<button type="button" class="inactive" id="buttonInterventions">Add Interventions</button>
-
-				<button type="button" class="inactive" id="buttonReset">Reset Grid</button>
-			</div>
-
-			<!-- this area holds the counters -->
-			<div id="counters">
-				<table>
-					<tr>
-						<!-- Day Counter -->
-						<td class="countTitle">
-							Day:
-						</td>
-						<td id="dayCount"></td>
-
-						<!-- Susceptible Counter -->
-						<td class="countTitle">
-							Susceptible:
-						</td>
-						<td id="susceptibleCount"></td>
-
-						<!-- Infected Counter -->
-						<td class="countTitle">
-							Infected:
-						</td>
-						<td id="infectedCount"></td>
-
-						<!-- Recovered Counter -->
-						<td class="countTitle">
-							Recovered:
-						</td>
-						<td id="recoveredCount"></td>
-
-						<!-- Intervention Counter -->
-						<td class="countTitle">
-							Interventions:
-						</td>
-						<td id="interventionCount"></td>
-					</tr>
-				</table>
-			</div>
 
 			<div id="main">
-				<!-- this area holds the disease grid -->
-				<div id="grid"></div>
+				<h2>Disease Spreading Simulation</h2>
 
-				<!-- this area holds the legend -->
-				<div id="legend">
-					<h3>Legend</h3>
-						<div class="legend left cell"></div><p>Susceptible</p>
-						<div class="legend right cell intervention"></div><p>Intervention</p>
-						<div id="infectedLegend" class="legend left cell infected"></div><p>Infected</p>
-						<div id="recoveredLegend" class="legend cell immune"></div><p>Recovered</p>
+
+				<!-- this area holds the button controls -->
+				<div id="controls">
+					<button type="button" class="inactive" id="buttonStep">Step</button>
+
+					<button type="button" class="inactive" id="buttonRun">Run</button>
+
+					<button type="button" class="active" id="buttonInfect" disabled="disabled">Add Infections</button>
+
+					<button type="button" class="inactive" id="buttonInterventions">Add Interventions</button>
+
+					<button type="button" class="inactive" id="buttonReset">Reset Grid</button>
 				</div>
 
-				<!-- this area holds the graph for the data -->
-				<div id="flot"></div>
+				<!-- this area holds the counters -->
+				<div id="counters">
+					<table>
+						<tr>
+							<!-- Day Counter -->
+							<td class="countTitle">
+								Day:
+							</td>
+							<td id="dayCount"></td>
+
+							<!-- Susceptible Counter -->
+							<td class="countTitle">
+								Susceptible:
+							</td>
+							<td id="susceptibleCount"></td>
+
+							<!-- Infected Counter -->
+							<td class="countTitle">
+								Infected:
+							</td>
+							<td id="infectedCount"></td>
+
+							<!-- Recovered Counter -->
+							<td class="countTitle">
+								Recovered:
+							</td>
+							<td id="recoveredCount"></td>
+
+							<!-- Intervention Counter -->
+							<td class="countTitle">
+								Interventions:
+							</td>
+							<td id="interventionCount"></td>
+						</tr>
+					</table>
+				</div>
+
+				<!-- this area holds the disease grid -->
+				<div id="grid"></div>
 			</div>
+
+			<!-- this area holds the legend -->
+			<div id="legend">
+				<h3>Legend</h3>
+					<div class="legend left cell"></div><p>Susceptible</p>
+					<div class="legend right cell intervention"></div><p>Intervention</p>
+					<div id="infectedLegend" class="legend left cell infected"></div><p id="infectedP">Currently<br />Infectious</p>
+					<div id="recoveredLegend" class="legend cell immune"></div><p>Recovered</p>
+			</div>
+
+			<!-- this area holds the graph for the data -->
+			<div id="flot"></div>
 
 			<!-- this area holds any information for the user -->
 			<div>
