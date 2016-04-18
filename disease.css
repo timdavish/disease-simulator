@@ -34,8 +34,14 @@ body {}
 		*/
 }
 
+#main {
+ width: 680px;
+ margin: 0%;
+ text-align: center;
+ display: inline-block;
+}
+
 h2 {
-	margin-left: 10%;
 }
 
 
@@ -45,7 +51,6 @@ h2 {
  */
 
 #controls {
-    margin-left: 5%;
 }
 
 #counters table {
@@ -59,18 +64,18 @@ h2 {
  */
 
 button {
-    margin: 8px;
-    padding: 10px 10px;
-    background-color: #4d4d4d;
-  border: 2px solid #4d4d4d;
-    opacity: 1;
-    border-radius: 1px 1px 10px 10px;
-  color: white;
-  text-align: center;
-  font-size: 16px;
+	margin: 8px;
+	padding: 10px 10px;
+	background-color: #4d4d4d;
+	border: 2px solid #4d4d4d;
+	opacity: 1;
+	border-radius: 1px 1px 10px 10px;
+	color: white;
+	text-align: center;
+	font-size: 16px;
 
-    -webkit-transition-duration: 0.5s; /* Safari */
-  transition-duration: 0.5s;
+	-webkit-transition-duration: 0.5s; /* Safari */
+	transition-duration: 0.5s;
 }
 
 #buttonStep {
@@ -140,10 +145,10 @@ button:hover, button:focus, button:active, button.active {
  **** Counter Styling ****
  */
 
- table {
+table {
      padding-left: 25px;
      font-size: 12pt;
- }
+}
 
 .countTitle {
     text-align: right;
@@ -163,12 +168,6 @@ button:hover, button:focus, button:active, button.active {
 /*
  **** Grid and Cell Styling ****
  */
- #main {
-     width: 920px;
-     height: auto;
-     margin-left: 0%;
- }
-
 #grid {
     margin: 8px 0px;
     position: relative;
@@ -219,7 +218,7 @@ button:hover, button:focus, button:active, button.active {
 
     width: 260px;
     height: auto;
-    margin: 50px 0px 0px 90px;
+    margin: 180px 0px 0px 90px;
     padding: 1%;
 
     /*
@@ -257,8 +256,12 @@ button:hover, button:focus, button:active, button.active {
     clear: left;
 }
 
+#infectedP {
+	margin-top: 5px;
+}
+
 #recoveredLegend {
-    margin-left: 42px;
+    margin-left: 31px;
 }
 
 
@@ -271,7 +274,7 @@ button:hover, button:focus, button:active, button.active {
     position: absolute;
     display: inline-block;
 
-    margin: 195px 0px 0px 15px;
+    margin: 325px 0px 0px 15px;
     width: 400px;
     height: 500px;
 }
