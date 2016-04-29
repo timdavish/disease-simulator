@@ -35,13 +35,14 @@ body {}
 }
 
 #main {
- width: 680px;
+ width: 830px;
  margin: 0%;
  text-align: center;
  display: inline-block;
 }
 
 h2 {
+	text-align: center;
 }
 
 
@@ -146,7 +147,7 @@ button:hover, button:focus, button:active, button.active {
  */
 
 table {
-     padding-left: 25px;
+	padding-left: 25px;
      font-size: 12pt;
 }
 
@@ -218,7 +219,7 @@ table {
 
     width: 260px;
     height: auto;
-    margin: 180px 0px 0px 90px;
+    margin: 180px 0px 0px 30px;
     padding: 1%;
 
     /*
@@ -274,7 +275,7 @@ table {
     position: absolute;
     display: inline-block;
 
-    margin: 325px 0px 0px 15px;
+    margin: 325px 0px 0px -45px;
     width: 400px;
     height: 500px;
 }
