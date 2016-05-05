@@ -219,7 +219,7 @@ table {
 
     width: 260px;
     height: auto;
-    margin: 180px 0px 0px 30px;
+    margin: 110px 0px 0px 30px;
     padding: 1%;
 
     /*
@@ -275,7 +275,7 @@ table {
     position: absolute;
     display: inline-block;
 
-    margin: 325px 0px 0px -45px;
+    margin: 255px 0px 0px -45px;
     width: 400px;
     height: 500px;
 }
